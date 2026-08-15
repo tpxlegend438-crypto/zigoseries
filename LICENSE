@@ -1,0 +1,10 @@
+---
+
+### Instructions to Add to Your Repository:
+1. Create a file named **`README.md`** in your repository folder.
+2. Paste the code above into the file.
+3. Commit and push it to GitHub:
+   ```bash
+   git add README.md
+   git commit -m "docs: add modern GitHub README"
+   git push origin main
