@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ==========================================================================
+       SEO & SEARCH ENGINE META TAGS (FOR TOP GOOGLE RANKINGS)
+       ========================================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <!-- Primary Title & Description for Google Search Snippet -->
+  <title>ZIGO SERIES - Free Movies, TV Shows, Anime & Live Sports Streaming Directory</title>
+  <meta name="description" content="Explore ZIGO SERIES: The ultimate directory of 109+ verified free streaming links for Movies, TV Shows, Anime, Manga, and Live Sports. Fast, safe, and low latency." />
+  <meta name="keywords" content="Zigo Series, free movies streaming, anime streaming sites, watch tv shows online, live sports streams, manga online, streaming directory" />
+  <meta name="author" content="TP x STUDIO" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <!-- Canonical URL (Replace with your actual domain name) -->
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- Google Favicons / Logos for Search Engine Snippets -->
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.png" />
+
+  <!-- Open Graph / Facebook / WhatsApp Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:title" content="ZIGO SERIES - 109+ Verified Streaming Directory" />
+  <meta property="og:description" content="Access 109+ verified streaming portals for Movies, Anime, Manga, and Live Sports with zero latency." />
+  <meta property="og:image" content="https://yourdomain.com/logo.png" />
+  <meta property="og:site_name" content="ZIGO SERIES" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ZIGO SERIES - Verified Streaming Directory" />
+  <meta name="twitter:description" content="Stream Movies, TV Shows, Anime, and Live Sports with 109+ verified links." />
+  <meta name="twitter:image" content="https://yourdomain.com/logo.png" />
+
+  <!-- ==========================================================================
+       SCHEMA.ORG STRUCTURED DATA (SHOWS LOGO & SNIPPETS ON GOOGLE)
+       ========================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://yourdomain.com/#website",
+        "url": "https://yourdomain.com/",
+        "name": "ZIGO SERIES",
+        "description": "Directory of verified streaming portals for Movies, Anime, Manga, and Live Sports.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "TP x STUDIO",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://yourdomain.com/logo.png"
+          }
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://yourdomain.com/#organization",
+        "name": "ZIGO SERIES",
+        "url": "https://yourdomain.com/",
+        "logo": "https://yourdomain.com/logo.png",
+        "sameAs": [
+          "https://discord.gg/bazxR8fA43",
+          "https://github.com/N3rdmade/TBCPL/"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Outfit:wght@300;400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS Styling -->
+  <style>
+    :root {
+      --bg-dark: #050711;
+      --accent-cyan: #00f2fe;
+      --accent-purple: #7f00ff;
+      --accent-pink: #e100ff;
+      --glass-bg: rgba(255, 255, 255, 0.04);
+      --glass-border: rgba(255, 255, 255, 0.09);
+      --glass-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+      --text-main: #ffffff;
+      --text-dim: #94a3b8;
+      --font-fancy: 'Orbitron', sans-serif;
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Outfit', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      min-height: 100vh;
+      padding-bottom: 95px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #04050a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(var(--accent-cyan), var(--accent-purple));
+      border-radius: 10px;
+    }
+
+    #bg-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: -1;
+      opacity: 0.35;
+      animation: floatOrb 12s infinite alternate ease-in-out;
+    }
+    .orb-1 {
+      top: -10%;
+      left: -10%;
+      width: 50vw;
+      height: 50vw;
+      background: radial-gradient(circle, var(--accent-cyan), transparent);
+    }
+    .orb-2 {
+      bottom: -15%;
+      right: -10%;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, var(--accent-purple), transparent);
+      animation-delay: -5s;
+    }
+
+    @keyframes floatOrb {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(50px, 70px) scale(1.15); }
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      background: rgba(5, 7, 17, 0.85);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 0.55rem 5%;
+      height: 62px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .logo-wrapper {
+      width: 36px;
+      height: 36px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.6));
+      transition: transform 0.3s ease;
+    }
+
+    .logo-wrapper:hover .logo-img {
+      transform: rotate(10deg) scale(1.08);
+    }
+
+    .logo-placeholder-box {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 900;
+      font-size: 1.1rem;
+      box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
+    }
+
+    .brand-title {
+      font-family: var(--font-fancy);
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      background: linear-gradient(90deg, #ffffff, var(--accent-cyan), var(--accent-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+      text-transform: uppercase;
+    }
+
+    .brand-title span {
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tp-studio-btn {
+      padding: 0.45rem 1.1rem;
+      background: linear-gradient(135deg, rgba(0, 242, 254, 0.15), rgba(127, 0, 255, 0.25));
+      border: 1px solid rgba(0, 242, 254, 0.4);
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.78rem;
+      font-family: var(--font-fancy);
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .tp-studio-btn:hover {
+      transform: translateY(-2px) scale(1.04);
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 25px rgba(0, 242, 254, 0.6);
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    }
+
+    .hero {
+      padding: 2.2rem 5% 1rem 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      min-height: 40vh;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.35rem 0.9rem;
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      border-radius: 20px;
+      color: var(--accent-cyan);
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      line-height: 1.1;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-title .glow-text {
+      font-family: var(--font-fancy);
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 30px rgba(0, 242, 254, 0.3);
+    }
+
+    .hero-description {
+      color: var(--text-dim);
+      font-size: 0.98rem;
+      line-height: 1.5;
+      max-width: 520px;
+    }
+
+    .hero-visual {
+      position: relative;
+      perspective: 1000px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-card-3d {
+      width: 100%;
+      max-width: 380px;
+      height: 310px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(20px);
+      box-shadow: var(--glass-shadow);
+      overflow: hidden;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.1s ease-out;
+    }
+
+    .hero-card-image {
+      width: 100%;
+      height: 68%;
+      background: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero-card-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, var(--bg-dark), transparent);
+    }
+
+    .hero-card-info {
+      padding: 0.9rem 1.3rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-card-info h3 {
+      font-family: var(--font-fancy);
+      font-size: 1.15rem;
+      margin-bottom: 0.2rem;
+      letter-spacing: 1px;
+    }
+
+    .hero-card-info p {
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+
+    .main-search-section {
+      padding: 1.5rem 5% 0.5rem 5%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-relative-box {
+      position: relative;
+      width: 100%;
+      max-width: 650px;
+    }
+
+    .search-box {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.85rem 1.2rem 0.85rem 2.8rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      border-radius: 35px;
+      color: #fff;
+      font-size: 0.98rem;
+      font-family: var(--font-body);
+      outline: none;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 242, 254, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 25px rgba(0, 242, 254, 0.4), 0 0 10px rgba(127, 0, 255, 0.3);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .search-box i {
+      position: absolute;
+      left: 1.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--accent-cyan);
+      font-size: 1rem;
+    }
+
+    .search-dropdown {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      right: 0;
+      background: rgba(8, 11, 25, 0.96);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.85), 0 0 20px rgba(0, 242, 254, 0.2);
+      max-height: 320px;
+      overflow-y: auto;
+      z-index: 500;
+      display: none;
+      padding: 8px;
+    }
+
+    .search-dropdown.active {
+      display: block;
+    }
+
+    .search-result-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0.65rem 0.9rem;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #fff;
+      transition: background 0.2s ease;
+    }
+
+    .search-result-item:hover {
+      background: rgba(0, 242, 254, 0.15);
+    }
+
+    .search-result-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      object-fit: cover;
+      background: rgba(255,255,255,0.1);
+      flex-shrink: 0;
+    }
+
+    .search-result-text h5 {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .search-result-text p {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    .series-section {
+      padding: 1.2rem 5% 4rem 5%;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+    }
+
+    .grid-2x2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      width: 100%;
+    }
+
+    .card-3d {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 18px;
+      padding: 1.1rem;
+      backdrop-filter: blur(15px);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+      color: var(--text-main);
+      min-height: 130px;
+      min-width: 0;
+    }
+
+    .card-3d:hover {
+      border-color: rgba(0, 242, 254, 0.4);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 242, 254, 0.2);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 0.6rem;
+      min-width: 0;
+    }
+
+    .logo-box-container {
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      flex-shrink: 0;
+    }
+
+    .site-logo-icon {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 4px;
+    }
+
+    .logo-letter-badge {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-fancy);
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: #fff;
+    }
+
+    .card-info {
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .card-title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-url {
+      color: var(--text-dim);
+      font-size: 0.78rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 2px;
+    }
+
+    .card-badge {
+      align-self: flex-start;
+      background: rgba(0, 242, 254, 0.15);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .card-badge.trusted {
+      background: rgba(127, 0, 255, 0.2);
+      color: var(--accent-pink);
+      border-color: rgba(225, 0, 255, 0.4);
+    }
+
+    .card-footer-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.6rem;
+      padding-top: 0.6rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+
+    .card-action {
+      color: var(--accent-cyan);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .bottom-nav-wrapper {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      width: 92%;
+      max-width: 920px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .glass-tabs-container {
+      display: flex;
+      background: rgba(10, 13, 28, 0.88);
+      padding: 6px;
+      border-radius: 40px;
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 242, 254, 0.25);
+      position: relative;
+      gap: 4px;
+      width: 100%;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+
+    .glass-tabs-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 0.65rem 1rem;
+      border: none;
+      background: transparent;
+      color: var(--text-dim);
+      font-weight: 600;
+      font-size: 0.85rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      color: #ffffff;
+    }
+
+    .tab-indicator {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      height: calc(100% - 12px);
+      background: linear-gradient(135deg, rgba(0, 242, 254, 0.3), rgba(127, 0, 255, 0.5));
+      border: 1px solid rgba(0, 242, 254, 0.6);
+      border-radius: 30px;
+      transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+      box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+      z-index: 1;
+    }
+
+    footer {
+      border-top: 1px solid var(--glass-border);
+      padding: 2.2rem 5% 6rem 5%;
+      background: rgba(5, 7, 14, 0.8);
+      backdrop-filter: blur(20px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .footer-text {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background: var(--accent-cyan);
+      color: #000;
+      transform: translateY(-3px);
+      box-shadow: 0 0 15px var(--accent-cyan);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 1.2rem;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .hero-description {
+        margin: 0 auto 1.2rem auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .grid-2x2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.65rem;
+      }
+      .card-3d {
+        padding: 0.75rem;
+        min-height: 115px;
+      }
+      .card-top {
+        gap: 8px;
+        margin-bottom: 0.4rem;
+      }
+      .logo-box-container {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        border-radius: 8px;
+      }
+      .card-title {
+        font-size: 0.9rem;
+      }
+      .card-url {
+        font-size: 0.72rem;
+      }
+      .hero-title {
+        font-size: 1.7rem;
+      }
+      .bottom-nav-wrapper {
+        width: 96%;
+        bottom: 10px;
+      }
+      .tab-btn {
+        padding: 0.55rem 0.75rem;
+        font-size: 0.76rem;
+      }
+      header {
+        padding: 0.5rem 4%;
+        height: 58px;
+      }
+      .tp-studio-btn {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.68rem;
+      }
+      .brand-title {
+        font-size: 1.05rem;
+      }
+      .logo-wrapper {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="brand-container" aria-label="ZIGO SERIES Home">
+      <div class="logo-wrapper">
+        <img src="logo.png" alt="ZIGO SERIES Logo" class="logo-img" id="headerLogoImg" />
+        <div class="logo-placeholder-box" id="headerLogoFallback" style="display: none;">Z</div>
+      </div>
+      <span class="brand-title">ZIGO <span>SERIES</span></span>
+    </a>
+
+    <a href="https://tpxstudio.vercel.app" target="_blank" rel="noopener noreferrer" class="tp-studio-btn">
+      <i class="fa-solid fa-code"></i> Made by TP x STUDIO
+    </a>
+  </header>
+
+  <!-- MAIN SEMANTIC WRAPPER FOR BETTER SEO -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fa-solid fa-bolt"></i> 109 Verified Streaming Links
+        </div>
+        <h1 class="hero-title">
+          Stream Without Limits <br />
+          <span class="glow-text">ZIGO SERIES</span>
+        </h1>
+        <p class="hero-description">
+          Access premium verified streaming portals for Movies, TV Shows, Anime, Manga, Live Sports, and Apps. Formatted for phone & desktop.
+        </p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-3d" id="heroCard">
+          <div class="hero-card-image"></div>
+          <div class="hero-card-info">
+            <h3>ZIGO SERIES Engine</h3>
+            <p>Instant access to 109 verified streaming sites with low latency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN SEARCH BAR -->
+    <div class="main-search-section">
+      <div class="search-relative-box">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search 109+ streaming sites..." autocomplete="off" aria-label="Search streaming sites" />
+        </div>
+        <div class="search-dropdown" id="searchDropdown"></div>
+      </div>
+    </div>
+
+    <!-- 2x2 SERIES GRID SECTION -->
+    <section class="series-section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <i class="fa-solid fa-compass" style="color: var(--accent-cyan);"></i>
+          <span id="sectionTitleText">All Streaming Directory</span>
+        </h2>
+      </div>
+
+      <div class="grid-2x2" id="seriesGrid">
+        <!-- Cards rendered dynamically via JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- NAVIGATION TAB BAR -->
+  <nav class="bottom-nav-wrapper" aria-label="Streaming categories">
+    <div class="glass-tabs-container" id="tabsContainer">
+      <div class="tab-indicator" id="tabIndicator"></div>
+      
+      <button class="tab-btn active" data-category="all" data-title="All Streaming Directory">
+        <i class="fa-solid fa-border-all"></i> All (109)
+      </button>
+      <button class="tab-btn" data-category="movies" data-title="Movies & Shows Directory">
+        <i class="fa-solid fa-film"></i> Movies (25)
+      </button>
+      <button class="tab-btn" data-category="anime" data-title="Anime Streams Directory">
+        <i class="fa-solid fa-dragon"></i> Anime (21)
+      </button>
+      <button class="tab-btn" data-category="manga" data-title="Manga & Comics Directory">
+        <i class="fa-solid fa-book-open"></i> Manga (24)
+      </button>
+      <button class="tab-btn" data-category="sports" data-title="Live TV & Sports Directory">
+        <i class="fa-solid fa-trophy"></i> Live TV (17)
+      </button>
+      <button class="tab-btn" data-category="paid" data-title="Paid & Premium Services Directory">
+        <i class="fa-solid fa-crown"></i> Paid (13)
+      </button>
+      <button class="tab-btn" data-category="apps" data-title="Apps & Tools Directory">
+        <i class="fa-solid fa-mobile-screen-button"></i> Apps (9)
+      </button>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <div class="logo-wrapper" style="width: 28px; height: 28px;">
+        <img src="logo.png" alt="ZIGO SERIES Footer Logo" class="logo-img" id="footerLogoImg" />
+        <div class="logo-placeholder-box" id="footerLogoFallback" style="display: none; font-size: 0.75rem;">Z</div>
+      </div>
+      <span class="footer-text">&copy; 2026 <strong>ZIGO SERIES</strong>. Powered by <a href="https://tpxstudio.vercel.app" target="_blank" style="color:var(--accent-cyan); text-decoration:none;">TP x STUDIO</a>.</span>
+    </div>
+    <div class="social-links">
+      <a href="https://tpxstudio.vercel.app" target="_blank" class="social-icon" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+      <a href="https://discord.gg/bazxR8fA43" target="_blank" class="social-icon" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://github.com/N3rdmade/TBCPL/" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT ENGINE -->
+  <script>
+    // Header Logo Fallback Handling
+    const headerLogoImg = document.getElementById('headerLogoImg');
+    const headerLogoFallback = document.getElementById('headerLogoFallback');
+    if (headerLogoImg) {
+      headerLogoImg.onerror = () => {
+        headerLogoImg.style.display = 'none';
+        if (headerLogoFallback) headerLogoFallback.style.display = 'flex';
+      };
+    }
+
+    const footerLogoImg = document.getElementById('footerLogoImg');
+    const footerLogoFallback = document.getElementById('footerLogoFallback');
+    if (footerLogoImg) {
+      footerLogoImg.onerror = () => {
+        footerLogoImg.style.display = 'none';
+        if (footerLogoFallback) footerLogoFallback.style.display = 'flex';
+      };
+    }
+
+    // DATASET
+    const sitesData = [
+      { name: "1Shows", url: "https://www.1shows.org/", category: "movies", trusted: true },
+      { name: "1Flex", url: "https://www.1flex.org/", category: "movies", trusted: true },
+      { name: "1Tube", url: "https://www.1tube.org/", category: "movies", trusted: true },
+      { name: "shuttletv", url: "https://shuttletv.su/", category: "movies", trusted: false },
+      { name: "FlickyStream", url: "https://flickystream.dad/", category: "movies", trusted: true },
+      { name: "MeowTV", url: "https://meowtv.ru/", category: "movies", trusted: false },
+      { name: "RiveStream", url: "https://rivestream.ru/", category: "movies", trusted: false },
+      { name: "CinemaBZ", url: "https://cinema.army/", category: "movies", trusted: false },
+      { name: "Spenflix", url: "https://watch.spencerdevs.xyz/", category: "movies", trusted: false },
+      { name: "primeflix", url: "https://primeflix.ru/", category: "movies", trusted: false },
+      { name: "Nepu", url: "https://nepu.cc/", category: "movies", trusted: false },
+      { name: "flixgaze", url: "https://www.flixgaze.com/", category: "movies", trusted: false },
+      { name: "netplayz", url: "https://netplayz.top/", category: "movies", trusted: false },
+      { name: "HollyMovieHD", url: "https://hollymoviehd.cc/", category: "movies", trusted: false },
+      { name: "Cinejoy", url: "https://cinejoy.to/", category: "movies", trusted: false },
+      { name: "Cineby", url: "https://www.cineby.at/", category: "movies", trusted: false },
+      { name: "CinemaCity", url: "https://cinemacity.cc/", category: "movies", trusted: false },
+      { name: "Moviebox", url: "https://h5.inmoviebox.com/", category: "movies", trusted: false },
+      { name: "onlyflix", url: "https://onlyflix.to/", category: "movies", trusted: false },
+      { name: "popcorn", url: "https://popcornmovies.io/", category: "movies", trusted: false },
+      { name: "HdTodayz", url: "https://hdtodayz.net/", category: "movies", trusted: false },
+      { name: "Willow", url: "https://willow.arlen.icu/", category: "movies", trusted: false },
+      { name: "FMovies", url: "https://fmovies-hd.to/home/", category: "movies", trusted: false },
+      { name: "Flixway", url: "https://flixway.ru/", category: "movies", trusted: false },
+      { name: "StreamingUnity", url: "https://streamingunity.vip/", category: "movies", trusted: false },
+
+      { name: "ReAnime", url: "https://reanime.to/home", category: "anime", trusted: true },
+      { name: "animepahe", url: "https://animepahe.pw/", category: "anime", trusted: true },
+      { name: "Anikoto", url: "https://anikototv.to", category: "anime", trusted: true },
+      { name: "Enma", url: "https://www.enma.lol", category: "anime", trusted: true },
+      { name: "Miruro", url: "https://www.miruro.to", category: "anime", trusted: true },
+      { name: "AnimeNexus", url: "https://anime.nexus/", category: "anime", trusted: false },
+      { name: "AniDB", url: "https://anidb.app/home", category: "anime", trusted: false },
+      { name: "Senshi", url: "https://senshi.live/", category: "anime", trusted: false },
+      { name: "Anikage", url: "https://anikage.cc/home", category: "anime", trusted: false },
+      { name: "AniDap", url: "https://anidap.lol/", category: "anime", trusted: false },
+      { name: "Kitetsu", url: "https://kitetsu.net/", category: "anime", trusted: false },
+      { name: "SenpaiFlix", url: "https://senpaiflix.fun/", category: "anime", trusted: false },
+      { name: "Animex", url: "https://animex.one/home", category: "anime", trusted: false },
+      { name: "AnimeTVPlus", url: "https://animetvplus.xyz/", category: "anime", trusted: false },
+      { name: "Anistream", url: "https://anistream.one", category: "anime", trusted: false },
+      { name: "KickAssAnime", url: "https://kaa.lt/", category: "anime", trusted: false },
+      { name: "Justanime", url: "https://justanime.to/", category: "anime", trusted: false },
+      { name: "AniWaves", url: "https://aniwaves.ru", category: "anime", trusted: false },
+      { name: "Animeheaven", url: "https://animeheaven.me/", category: "anime", trusted: false },
+      { name: "Anitaku", url: "https://anitaku.io/", category: "anime", trusted: false },
+      { name: "Lunar", url: "https://lunarx.to/", category: "anime", trusted: false },
+
+      { name: "MangaBall", url: "https://mangaball.net/", category: "manga", trusted: true },
+      { name: "Atsu", url: "https://atsu.moe/", category: "manga", trusted: true },
+      { name: "Onisaga", url: "https://onisaga.com/", category: "manga", trusted: true },
+      { name: "Kagane", url: "https://kagane.to/", category: "manga", trusted: false },
+      { name: "AquaManga", url: "https://aquareader.org/", category: "manga", trusted: false },
+      { name: "Comick", url: "https://comick.dev/", category: "manga", trusted: false },
+      { name: "Comix", url: "https://comix.to/", category: "manga", trusted: false },
+      { name: "MangaDot", url: "https://mangadot.net/", category: "manga", trusted: false },
+      { name: "MangaBuddy", url: "https://mangabuddy1.co.uk/", category: "manga", trusted: false },
+      { name: "Qtoon", url: "https://qtoon.org/", category: "manga", trusted: false },
+      { name: "SpecterScans", url: "https://specterscans.com/", category: "manga", trusted: false },
+      { name: "Mangago", url: "https://mangago.me/", category: "manga", trusted: false },
+      { name: "MangaFire", url: "https://mangafire.to/home", category: "manga", trusted: false },
+      { name: "AllManga", url: "https://allmanga.to/manga?cty=ALL", category: "manga", trusted: false },
+      { name: "MangaKakalot", url: "https://www.mangakakalot.gg/", category: "manga", trusted: false },
+      { name: "AsuraComic", url: "https://asurascans.com/", category: "manga", trusted: false },
+      { name: "ReadComicOnline", url: "https://readcomicsonline.ru/", category: "manga", trusted: false },
+      { name: "MangaHub", url: "https://mangahub.io/", category: "manga", trusted: false },
+      { name: "WeebCentral", url: "https://weebcentral.com/", category: "manga", trusted: false },
+      { name: "MangaKatana", url: "https://mangakatana.com/", category: "manga", trusted: false },
+      { name: "AnimeZ", url: "https://likemanga.ink/", category: "manga", trusted: false },
+      { name: "Mangaxo", url: "https://mangaxo.com/home", category: "manga", trusted: false },
+      { name: "AllManga Hub", url: "https://allmanga.to/", category: "manga", trusted: false },
+      { name: "King of Shojo", url: "https://kingofshojo.com", category: "manga", trusted: false },
+
+      { name: "DaddyLive", url: "https://dlhd.st/", category: "sports", trusted: true },
+      { name: "DAMITV", url: "https://ondemand.st/", category: "sports", trusted: true },
+      { name: "Streamed.PK", url: "https://streamed.pk/", category: "sports", trusted: true },
+      { name: "Sport+", url: "https://en97.sportplus.watch/", category: "sports", trusted: false },
+      { name: "VenueVault", url: "https://venuevault.live/", category: "sports", trusted: false },
+      { name: "TheTvApp", url: "https://thetvapptv.com", category: "sports", trusted: false },
+      { name: "NTVStream", url: "https://ntv.cx", category: "sports", trusted: false },
+      { name: "PublicIPTV", url: "https://publiciptv.com/", category: "sports", trusted: false },
+      { name: "StreamEast", url: "https://streameastnow.net/", category: "sports", trusted: false },
+      { name: "iStreamEast", url: "https://thestreameast.top/", category: "sports", trusted: false },
+      { name: "SportSurge", url: "https://v2.sportsurge.net/", category: "sports", trusted: false },
+      { name: "TV Garden", url: "https://famelack.com/", category: "sports", trusted: false },
+      { name: "RiveStream Sports", url: "https://rivestream.ru/livesports/", category: "sports", trusted: false },
+      { name: "Sportsbite", url: "https://sportsbite.org/", category: "sports", trusted: false },
+      { name: "Stmify", url: "https://stmify.com/", category: "sports", trusted: false },
+      { name: "ppv.to", url: "https://ppv.st/", category: "sports", trusted: false },
+      { name: "fifstream1", url: "https://fifstream1.gt.tc/", category: "sports", trusted: false },
+
+      { name: "Disney+", url: "https://www.disneyplus.com/identity/login/", category: "paid", trusted: true },
+      { name: "Shudder", url: "https://www.shudder.com/", category: "paid", trusted: false },
+      { name: "Hulu", url: "https://auth.hulu.com/web/login/", category: "paid", trusted: false },
+      { name: "Netflix", url: "https://www.netflix.com/", category: "paid", trusted: true },
+      { name: "Viki", url: "https://www.viki.com/", category: "paid", trusted: false },
+      { name: "MAX", url: "https://www.hbomax.com/", category: "paid", trusted: true },
+      { name: "Apple TV+", url: "https://tv.apple.com/", category: "paid", trusted: true },
+      { name: "Amazon Prime", url: "https://www.amazon.com/gp/video/collection/IncludedwithPrime", category: "paid", trusted: true },
+      { name: "Paramount+", url: "https://www.paramountplus.com/account/signin/", category: "paid", trusted: false },
+      { name: "Crunchyroll", url: "https://crunchyroll.com/login", category: "paid", trusted: true },
+      { name: "MGM+", url: "https://www.mgmplus.com/", category: "paid", trusted: false },
+      { name: "Peacock", url: "https://www.peacocktv.com/start", category: "paid", trusted: false },
+      { name: "AMC+", url: "https://www.amcplus.com/login", category: "paid", trusted: false },
+
+      { name: "Playtorrio", url: "https://playtorrio.pages.dev/", category: "apps", trusted: false },
+      { name: "BeeTV", url: "https://beetvs.com.co/", category: "apps", trusted: false },
+      { name: "HDO Box", url: "https://hdobox.net/", category: "apps", trusted: false },
+      { name: "MovieBox", url: "https://www.moviesbox.com.co/home/", category: "apps", trusted: false },
+      { name: "NetMirror", url: "https://netmirror.gg/2/en", category: "apps", trusted: false },
+      { name: "PikaShow", url: "https://pikashowtv.in/", category: "apps", trusted: false },
+      { name: "MobiFlix", url: "https://mobiflix.tv/", category: "apps", trusted: false },
+      { name: "YouCine", url: "https://youcineapkpro.com/", category: "apps", trusted: false },
+      { name: "PlayFy", url: "https://playfy.live/", category: "apps", trusted: false }
+    ];
+
+    const seriesGrid = document.getElementById('seriesGrid');
+    const searchInput = document.getElementById('searchInput');
+    const searchDropdown = document.getElementById('searchDropdown');
+    const sectionTitleText = document.getElementById('sectionTitleText');
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabIndicator = document.getElementById('tabIndicator');
+
+    function getCleanDomain(url) {
+      try {
+        const parsed = new URL(url);
+        return parsed.hostname.replace('www.', '');
+      } catch (e) {
+        return url.replace('https://', '').replace('http://', '').split('/')[0];
+      }
+    }
+
+    function renderCards(data) {
+      seriesGrid.innerHTML = '';
+      if (data.length === 0) {
+        seriesGrid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-dim); padding: 4rem;">No matching sites found...</div>`;
+        return;
+      }
+
+      data.forEach(item => {
+        const card = document.createElement('a');
+        card.className = 'card-3d';
+        card.href = item.url;
+        card.target = "_blank";
+        card.rel = "noopener noreferrer";
+        
+        const badgeHTML = item.trusted 
+          ? `<span class="card-badge trusted"><i class="fa-solid fa-shield-halved"></i> Trusted</span>`
+          : `<span class="card-badge"><i class="fa-solid fa-bolt"></i> Active</span>`;
+
+        const domainClean = getCleanDomain(item.url);
+        const firstLetter = item.name.charAt(0).toUpperCase();
+
+        const logoContainer = document.createElement('div');
+        logoContainer.className = 'logo-box-container';
+
+        const logoImg = document.createElement('img');
+        logoImg.className = 'site-logo-icon';
+        logoImg.alt = `${item.name} logo`;
+        logoImg.src = `https://www.google.com/s2/favicons?domain=${domainClean}&sz=128`;
+
+        const letterBadge = document.createElement('div');
+        letterBadge.className = 'logo-letter-badge';
+        letterBadge.style.display = 'none';
+        letterBadge.textContent = firstLetter;
+
+        logoImg.onerror = function() {
+          if (this.src.includes('google.com')) {
+            this.src = `https://icons.duckduckgo.com/ip3/${domainClean}.ico`;
+          } else {
+            this.style.display = 'none';
+            letterBadge.style.display = 'flex';
+          }
+        };
+
+        logoContainer.appendChild(logoImg);
+        logoContainer.appendChild(letterBadge);
+
+        card.innerHTML = `
+          <div>
+            <div class="card-top">
+              ${logoContainer.outerHTML}
+              <div class="card-info">
+                <h3 class="card-title">${item.name}</h3>
+                <div class="card-url">${domainClean}</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer-line">
+            ${badgeHTML}
+            <span class="card-action">Visit <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+        `;
+
+        seriesGrid.appendChild(card);
+        attach3DTilt(card);
+      });
+    }
+
+    if (searchInput && searchDropdown) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim().toLowerCase();
+        if (!query) {
+          searchDropdown.classList.remove('active');
+          searchDropdown.innerHTML = '';
+          filterData(getActiveCategory(), '');
+          return;
+        }
+
+        const matches = sitesData.filter(item => 
+          item.name.toLowerCase().includes(query) || 
+          item.url.toLowerCase().includes(query)
+        );
+
+        searchDropdown.innerHTML = '';
+        if (matches.length === 0) {
+          searchDropdown.innerHTML = `<div style="padding:0.8rem; text-align:center; color:var(--text-dim); font-size:0.85rem;">No sites found...</div>`;
+        } else {
+          matches.slice(0, 6).forEach(item => {
+            const domainClean = getCleanDomain(item.url);
+            const logoUrl = `https://www.google.com/s2/favicons?domain=${domainClean}&sz=64`;
+
+            const resultItem = document.createElement('a');
+            resultItem.className = 'search-result-item';
+            resultItem.href = item.url;
+            resultItem.target = "_blank";
+            resultItem.rel = "noopener noreferrer";
+
+            resultItem.innerHTML = `
+              <img src="${logoUrl}" alt="${item.name}" class="search-result-icon" />
+              <div class="search-result-text">
+                <h5>${item.name}</h5>
+                <p>${domainClean} • <span style="color:var(--accent-cyan); text-transform:uppercase;">${item.category}</span></p>
+              </div>
+            `;
+            searchDropdown.appendChild(resultItem);
+          });
+        }
+        searchDropdown.classList.add('active');
+        filterData(getActiveCategory(), query);
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-relative-box')) {
+          searchDropdown.classList.remove('active');
+        }
+      });
+    }
+
+    function getActiveCategory() {
+      const activeTab = document.querySelector('.tab-btn.active');
+      return activeTab ? activeTab.getAttribute('data-category') : 'all';
+    }
+
+    function updateTabIndicator(btn) {
+      if (!btn) return;
+      tabIndicator.style.width = `${btn.offsetWidth}px`;
+      tabIndicator.style.left = `${btn.offsetLeft}px`;
+    }
+
+    window.addEventListener('load', () => {
+      if (tabBtns.length > 0) updateTabIndicator(tabBtns[0]);
+    });
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        updateTabIndicator(btn);
+
+        const newTitle = btn.getAttribute('data-title');
+        if (newTitle && sectionTitleText) {
+          sectionTitleText.textContent = newTitle;
+        }
+
+        const category = btn.getAttribute('data-category');
+        const query = (searchInput && searchInput.value) || '';
+        filterData(category, query);
+      });
+    });
+
+    function filterData(category, query) {
+      let filtered = sitesData;
+      if (category !== 'all') {
+        filtered = filtered.filter(item => item.category === category);
+      }
+      if (query.trim() !== '') {
+        filtered = filtered.filter(item => 
+          item.name.toLowerCase().includes(query.toLowerCase()) || 
+          item.url.toLowerCase().includes(query.toLowerCase())
+        );
+      }
+      renderCards(filtered);
+    }
+
+    function attach3DTilt(element) {
+      if (!element) return;
+      element.addEventListener('mousemove', (e) => {
+        const rect = element.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * -10;
+        const rotateY = ((x - centerX) / centerX) * 10;
+        
+        element.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+      });
+
+      element.addEventListener('mouseleave', () => {
+        element.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+      });
+    }
+
+    const heroCard = document.getElementById('heroCard');
+    if (heroCard) attach3DTilt(heroCard);
+
+    renderCards(sitesData);
+
+    const canvas = document.getElementById('bg-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const particleCount = 60;
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        const activeTab = document.querySelector('.tab-btn.active');
+        if (activeTab) updateTabIndicator(activeTab);
+      });
+      resizeCanvas();
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.radius = Math.random() * 2 + 0.5;
+          this.vx = (Math.random() - 0.5) * 0.6;
+          this.vy = (Math.random() - 0.5) * 0.6;
+          this.color = Math.random() > 0.5 ? '#00f2fe' : '#7f00ff';
+        }
+
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        }
+
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = this.color;
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        }
+      }
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+
+      function animateCanvas() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let i = 0; i < particles.length; i++) {
+          particles[i].update();
+          particles[i].draw();
+
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < 130) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(0, 242, 254, ${1 - dist / 130 - 0.2})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(animateCanvas);
+      }
+
+      animateCanvas();
+    }
+  </script>
+</body>
+</html>
